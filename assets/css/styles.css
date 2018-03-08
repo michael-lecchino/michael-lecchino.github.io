@@ -1,0 +1,486 @@
+/* FONTS, LICENSES, & ICON STYLES
+   ================================================== */
+
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url(../fonts/CircularStd/CircularStd-Book.otf) format("opentype");
+}
+
+.oi {
+  font-size: 45%;
+  position: relative;
+  margin-right: 1rem;
+  display: block;
+  float: left;
+  top: 0.1rem;
+}
+
+/* MASTER STYLES
+  ============== */
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: absolute;
+  overflow: visible;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 75%
+}
+
+body {
+  background-color: #ddd;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+a {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+a {
+  color: #333;
+  border-bottom: 0.12rem solid #333;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 5.25rem
+}
+
+h2 {
+  font-size: 4.8rem
+}
+
+h3 {
+  font-size: 3.6rem
+}
+
+h4 {
+  font-size: 2.4rem
+}
+
+/* MAIN STYLES
+   ================================================== */
+
+.wrapper, .project-wrapper {
+  float: left;
+  width: 80%;
+  margin: 0 10%;
+  padding-bottom: 7.2rem;
+}
+
+.main {
+  font-family: "CircularStd-Book", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  margin: 3.6rem auto 0px;
+  padding: 14.4rem 0px 5rem;
+  height: auto;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* PROJECT STYLES
+   ================================================== */
+
+.dark {
+  -webkit-transition: background-color 0.666s;
+  -moz-transition: background-color 0.666s;
+  -o-transition: background-color 0.666s;
+  transition: background-color 0.666s;
+}
+
+.project-bg {
+  background-color: #333
+}
+
+.project-header .logo svg {
+  fill: #ddd
+}
+
+.project-header .logo:before {
+  border-color: #ddd
+}
+
+.project-header .logo:hover svg {
+  fill: #333
+}
+
+.project-header .logo:hover:before {
+  background: #ddd
+}
+
+.project-header .header-nav a {
+  color: #ddd;
+  border-color: #ddd;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 4.8rem;
+}
+
+.project-info {
+  color: #ddd;
+  width: 25%;
+  float: left;
+  position: fixed;
+}
+
+.project-info ul, .project-info p {
+  margin: 2.4rem 0
+}
+
+.project-info ul {
+  list-style: none;
+  opacity: 0.5;
+  font-size: 1.2rem;
+  font-family: "LLReplicaMono", 'Andale Mono', monospace;
+  margin-bottom: 2.4rem;
+}
+
+.project-info ul a {
+  color: #aaa;
+  border-color: #aaa;
+}
+
+.project-info {
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+awards {
+  font-size: 1.2rem;
+  line-height: 100%;
+}
+
+awards span.oi {
+  font-size: 120% !important;
+  display: block;
+  opacity: 0.5;
+  top: 0.65rem;
+  margin-right: 0.75rem;
+}
+
+.next {
+  color: #ddd;
+  border: 1px solid #ddd;
+  padding: 0.9rem 1.2rem 0.9rem;
+  border-radius: 50%;
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
+
+.next:last-child {
+  margin-left: 1.2rem;
+  padding: 0.8rem 1.1rem 1rem;
+  top: 25.6rem;
+}
+
+.next:hover {
+  opacity: 1
+}
+
+.project-info:hover {
+  opacity: 1 !important;
+  cursor: default;
+}
+
+.project-images {
+  width: 85%;
+  float: left;
+  overflow: hidden;
+  margin-left: 15%;
+}
+
+.project-images img, .project-images div, .project-images video {
+  width: 100%;
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.project-images video {
+  z-index: -1;
+  margin-bottom: -57.5%;
+}
+
+#slideshow {
+  white-space: nowrap;
+  display: block;
+  line-height: 100px;
+  overflow: hidden;
+}
+
+#slideshow div {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#slideshow div img {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ABOUT & CV
+   ================================================== */
+
+.contact {
+  position: relative;
+  /* font-family: "customFont", serif; */
+  /* font-family: "AtlasTypewriter-Light", "Helvetica", "Arial", sans-serif; */
+  text-decoration: none;
+  /* border-bottom: 0.35rem solid purple; */
+  top: 7.2rem;
+}
+
+a.contact-link {
+  /* font-family: "AtlasTypewriter-Regular"; */
+  text-decoration: none;
+  border-bottom: 0.35rem solid yellow;
+  top: 7.2rem;
+}
+
+/* EXTRA RULES */
+
+@-moz-document url-prefix() {
+  .lock-overlay {
+    margin-top: 15%;
+  }
+  .heart, .close-colophon {
+    font-size: 2rem;
+  }
+}
+
+/* RESPONSIVE RULES
+   ================================================== */
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 62.5%;
+  }
+  .header-content {
+    max-width: 1000px;
+  }
+  .main {
+    max-width: 1000px;
+  }
+  .cv-header-wrapper {
+    max-width: 1000px;
+  }
+  .colophon-info {
+    max-width: 1000px;
+  }
+  .logo:before {
+    margin-top: -19px;
+  }
+  /* Special Breaks Reset */
+  .boeing, .noct, .clarkes, .core {
+    clear: initial;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 60%
+  }
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 55%
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 52.5%;
+  }
+  h1, h2 {
+    font-size: 4.8rem;
+  }
+  .cv-header-wrapper {
+    display: none;
+  }
+  .cv-box, .cv-buttons {
+    width: 100%;
+    font-size: 1.4rem;
+    opacity: 1;
+  }
+  .contact-data {
+    font-size: 3.6rem;
+  }
+  .logo:before {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 52.5%;
+  }
+  .main {
+    padding-top: 10rem;
+  }
+  h1, h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  #filters {
+    display: none;
+  }
+  #projects a {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    margin-top: 1.4rem;
+  }
+  .project-info {
+    float: left;
+    width: 100%;
+    clear: both;
+    position: relative;
+  }
+  .project-images {
+    margin: 1.8rem 0;
+    width: 100%;
+  }
+  .cv-section {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    margin-top: -1.6rem;
+    opacity: 0.5;
+  }
+  .cv-buttons {
+    display: none;
+  }
+  div.contact {
+    position: fixed;
+    /* fixed */
+    bottom: 7.2rem;
+    width: auto;
+    /*padding-right: 5rem;*/
+    /* width: 4rem; */
+    /* margin: auto; */
+    /* margin: 3.6rem auto 0px; */
+    /* padding: 14.4rem 0px 5rem; */
+    /*padding-right: 40rem;*/
+    height: auto;
+    transition: all 0.5s ease 0s;
+    top: auto;
+  }
+  .lock-overlay {
+    width: 65%;
+  }
+  .next {
+    position: fixed;
+    bottom: 2.4rem;
+    left: 10%;
+    color: #333;
+    background: #ddd;
+    font-size: 1.8rem;
+    z-index: 9999 opacity:1 !important;
+  }
+  .next:last-child {
+    left: auto;
+    top: auto;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 52.5%;
+  }
+  #filters {
+    display: none;
+  }
+  #projects a {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    margin-top: 1rem;
+    clear: both;
+  }
+  h1, h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .header-nav a {
+    margin-left: 1.4rem;
+  }
+  .fog {
+    display: none !important;
+  }
+}
+
+/*
+
+@media screen and (device-aspect-ratio: 40/71) {
+  .cv-section {
+    margin-top: 1.6rem;
+    margin-left: -1.4rem;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+  html {
+    font-size: 25%;
+  }
+  .header-logo {
+    zoom: 0.65;
+  }
+  .logo:before {
+    border-width: 4px;
+    margin-left: -0.75rem;
+  }
+}
+*/
