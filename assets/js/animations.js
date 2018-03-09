@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     */
 
-    $(".wrapper").click(function() {
+    $(".contact").click(function() {
       location.reload(true);
       location.href = redirect
     })
