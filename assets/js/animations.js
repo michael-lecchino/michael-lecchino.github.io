@@ -17,9 +17,14 @@ $(document).ready(function() {
 
 
 
+
     $(".wrapper").click(function() {
       document.location.href = redirect
+      location.reload;
     })
+
+
+
 
   });
   $(".email, .phone").click(function(e) {
