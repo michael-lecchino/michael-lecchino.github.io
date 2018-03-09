@@ -16,11 +16,18 @@ $(document).ready(function() {
     */
 
 
-
+    /*
 
     $(".wrapper").click(function() {
-      document.location.href = redirect
-      location.reload;
+      location.href = redirect
+      location.reload();
+    })
+
+    */
+
+    $(".wrapper").click(function() {
+      location.reload(true);
+      location.href = redirect
     })
 
 
