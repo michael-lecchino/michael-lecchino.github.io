@@ -68,9 +68,19 @@ a {
   text-decoration: none;
 }
 
+
 a:hover {
   opacity: 0.5
 }
+
+/*
+
+a:hover::after {
+  opacity: 1
+}
+
+*/
+
 
 h1, h2, h3, h4 {
   font-weight: normal;
